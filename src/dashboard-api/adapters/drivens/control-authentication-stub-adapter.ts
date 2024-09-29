@@ -10,7 +10,7 @@ const permissionsMock: Permissions = {
     user: true
 }
 
-export class ControlAuthenticationStub implements ForControlAuthenticating {
+export class ControlAuthenticationStubAdapter implements ForControlAuthenticating {
     getAuthDetails(_email: string, _password: string): Promise<AuthDetails>{
         return Promise.resolve(authDetailsMock);
     };

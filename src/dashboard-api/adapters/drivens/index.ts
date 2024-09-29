@@ -1,1 +1,1 @@
-export * from "./control-authentication-stub";
+export * from "./control-authentication-stub-adapter";
