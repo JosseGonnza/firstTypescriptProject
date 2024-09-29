@@ -9,10 +9,10 @@ const userMock: RepoUser = {
 }
 
 export class RepoQuerierStub implements ForRepoQuerying {
-    getUser(email: string): Promise<RepoUser> {
+    getUser(_email: string): Promise<RepoUser> {
         return Promise.resolve(userMock);
     }
-    createUser(user: User, password: string): Promise<RepoUser> {
+    createUser(_user: User, _password: string): Promise<RepoUser> {
         return Promise.resolve(userMock);
     }
 }
