@@ -1,5 +1,5 @@
 import {User as RepoUser} from "../../../repository/app/schemas";
-import {User} from "../drivers";
+import {User} from "../../app/schemas";
 
 //TODO: Utilizamos el User de schemas como RepoUser para devolver valores
 // Utilizamos el User de for-authenticating para insertar

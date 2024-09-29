@@ -1,5 +1,6 @@
-import {AuthenticatedUser, ForAuthenticating, User} from "../../ports/drivers";
 import {DashboardApi} from "../../app/dashboard-api";
+import {ForAuthenticating} from "../../ports/drivers";
+import {AuthenticatedUser, User} from "../../app/schemas";
 
 //TODO: Esta clase no hace nada, sólo se encarga de controlar un evento externo
 // para poder utilizarlo en nuestro DashboardApi
