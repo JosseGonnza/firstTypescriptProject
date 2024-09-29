@@ -12,6 +12,6 @@ export interface AuthenticatedUser {
 export type User = Pick<AuthenticatedUser, 'email' | 'name'>;
 
 export interface ForAuthenticating {
-    login: (mail: string, password: string) => Promise<AuthenticatedUser>;
-    register: (user: User, password: string) => Promise<AuthenticatedUser>;
+    login(mail: string, password: string): Promise<AuthenticatedUser>;
+    register(user: User, password: string): Promise<AuthenticatedUser>;
 }
