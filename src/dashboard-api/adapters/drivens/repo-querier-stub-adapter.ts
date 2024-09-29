@@ -5,7 +5,7 @@ import {User} from "../../ports/drivers";
 const userMock: RepoUser = {
     id: '1',
     name: 'Yasmi',
-    email: 'yasmi@test.com'
+    email: 'yasmi@gmail.com'
 }
 
 export class RepoQuerierStubAdapter implements ForRepoQuerying {
