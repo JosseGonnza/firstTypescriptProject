@@ -1,1 +1,0 @@
-export * from "./control-authentication-stub-adapter";

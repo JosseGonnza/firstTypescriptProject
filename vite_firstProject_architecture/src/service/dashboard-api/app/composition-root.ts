@@ -1,6 +1,6 @@
-import {DashboardApi} from "./dashboard-api";
+import {DashboardApi} from "./dashboard-api.ts";
 import {ControlAuthenticationStubAdapter} from "../adapters/drivens";
-import {RepoQuerierStubAdapter} from "../adapters/drivens/repo-querier-stub-adapter";
+import {RepoQuerierStubAdapter} from "../adapters/drivens/repo-querier-stub-adapter.ts";
 import {AuthenticatorProxyAdapter} from "../adapters/drivers";
 
 //TODO: Una composición es una instancia de nuestro hexágono con todo lo que necesita para funcionar
