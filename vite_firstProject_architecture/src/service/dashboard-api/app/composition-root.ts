@@ -19,6 +19,8 @@ const  compositionMock = () => {
 //TODO: Con esto ya podemos utilizar nuestro Mock de Composition en el resto de la aplicación.
 export const { authenticatorProxyAdapter } = compositionMock();
 
+
+//TODO: Hacemos una comprobación de que nos devuelve lo esperado con nuestro User
 const userMock = {
     name: 'Yasmina',
     email: 'yasmi@gmail.com'

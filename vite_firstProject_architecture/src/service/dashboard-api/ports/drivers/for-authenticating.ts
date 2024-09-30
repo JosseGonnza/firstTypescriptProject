@@ -1,15 +1,4 @@
-export interface AuthenticatedUser {
-    id: string;
-    email: string;
-    name: string;
-    token: string;
-    refreshToken: string;
-}
-//TODO: Con Omit dejas de utilizar en el nuevo type las propiedades que le pasas
-// export type User = Omit<AuthenticatedUser, 'id'| 'token' | 'refreshToken'>;
-
-//TODO: Con Pick utilizas sólo las que le pasas
-export type User = Pick<AuthenticatedUser, 'email' | 'name'>;
+import {AuthenticatedUser, User} from "../../app/schemas";
 
 export interface ForAuthenticating {
     login(email: string, password: string): Promise<AuthenticatedUser>;
